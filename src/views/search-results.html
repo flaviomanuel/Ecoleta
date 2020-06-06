@@ -1,32 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt_br">
+{% extends "layout.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+{% set pageId = "page-search-results" %}
 
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/search-results.css">
-
-    <link rel="stylesheet" href="styles/responsive.css">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&family=Ubuntu:wght@700&display=swap"
-        rel="stylesheet">
+{% block title %}
     <title>Resultado da pesquisa</title>
-</head>
 
-<body>
+{% endblock title %}
 
-    <div id="page-search-results">
+{% block styles %}
+    <link rel="stylesheet" href="styles/search-results.css">
+{% endblock styles %}
 
-        <header>
-            <img src="icones/logo.svg" alt="Logomarca">
+{% block content %}
 
-            <a href="index.html">
-                <span> </span>
-                Voltar para home</a>
-        </header>
+    {% include "partials/page-header.html" %}
 
         <main>
             <h4>
@@ -62,7 +49,7 @@
              
         </main>
 
-    </div>
+{% endblock content %}
 
 </body>
 
