@@ -44,7 +44,8 @@ document
     .querySelector("select[name=uf]")
     .addEventListener("change", getCities)
 
-
+//itens de coleta
+//pegar todo os li's
 const itemsToCollect = document.querySelectorAll(".items-grid li");
 
 for(const item of itemsToCollect){
@@ -63,6 +64,8 @@ function handleSelectedItem(event){
 
     const itemId = itemLi.dataset.id;
 
+
+    
     //verificar se existem items selecionados, se sim
     // pegar os items selecionados
 
